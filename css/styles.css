@@ -75,6 +75,7 @@ body{
     width: 100vw;
     height: 100vh;
     color: #fff;
+    overflow: hidden;
 }
 .infos-titulo{
     margin: 0 0 25px 0;
@@ -118,6 +119,7 @@ body{
     background: #000;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 #secao-convidado .infos-titulo{
     text-align: center;
@@ -142,7 +144,34 @@ body{
 }
 /* Seção Produtos Oficiais
 ---------------------------------------------*/
-
+#secao-produtos{
+    background-image: url('../img/bg-produtos-oficias.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+}
+.infos-produtos{
+    margin: 50px 0;
+}
+#img-produtos{
+    margin: 100px 0 50px;
+}
+.produto, .produto-2{
+    display: inline-block;
+    margin: 5px 5px; 
+}
+#secao-produtos .divisor-linha{
+    position: relative;
+    left:42.5%;
+    border-bottom: 3px solid #3EB6DD;
+}
+#secao-produtos button{
+    position: relative;
+    left:43.5%;
+}
 
 /* Seção Notícias
 ---------------------------------------------*/
@@ -150,6 +179,53 @@ body{
 
 /* Seção Dados
 ---------------------------------------------*/
+#secao-dados{
+    background-image: url('../img/bg-dados.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.numero-dado{
+    display: block;
+    font-size: 60px;
+}
+.titulo-dado{
+    display: block;
+    font-size: 36px;
+}
+.subtitulo-dado{
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+}
+#secao-dados button{
+    position: relative;
+    left:38%;
+}
+.bloco-dado-1{
+    color: #1DA812;
+}
+.bloco-dado-2{
+    color: #27CCBC;
+}
+.bloco-dado-3{
+    color: #B554F2;
+}
+.bloco-dado-4{
+    color: #E33B3B;
+}
+.retangulo-dado-1{
+    position: absolute;
+    left:21.5%;
+    top: 20%;
+}
 
 /* Efeitos
 ---------------------------------------------*/
@@ -207,6 +283,34 @@ a:hover, a:active{
     #secao-convidado .btn{
         margin: 25px -25% 0; 
     }
+    /* Seção Produtos Oficiais*/
+    #img-produtos{
+        margin: 50px 0;
+        position: relative;
+        left: 10%;
+    }
+    #secao-produtos .infos-titulo{
+        position: relative;
+        left: 12.5%;
+    }
+    #secao-produtos .btn{
+        position: relative;
+        left: 32.5%;
+    }
+    /* Secao Dados */
+    #secao-dados{
+        width: 100%;
+        height: 185vh;
+    }
+    .bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+        margin: 0 0 40px;
+    }
+    .coluna-dado{
+        margin: 5% 12.5% 0;
+    }
+    #secao-dados .btn{
+        margin: 5px -20% 0; 
+    }
 }
 
 @media (max-width: 768px) and (orientation: landscape){
@@ -240,9 +344,122 @@ a:hover, a:active{
     #secao-convidado .btn{
         margin: 25px -5% 0; 
     }
+    .produto-2, .produto{
+        margin: 0 1px 0;
+        width: 125px;
+    }
+    #img-produtos{
+        position: relative;
+        left: 12.5%;
+    }
+    #secao-produtos .btn{
+        position: relative;
+        left: 47.5%;
+    }
+    /* Secao Dados */
+    #secao-dados{
+        width: 100%;
+        height: 300vh;
+    }
+    .bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+        margin: 0 0 40px;
+    }
+    .coluna-dado{
+        margin: 5% 12.5% 0;
+    }
+    #secao-dados .btn{
+        margin: 5px 0 0; 
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+    /* Carousel Apresentacao */
+    .titulo-carousel{
+        font-size: 35px;
+    }
+    /* Botao Carousel Apresentacao */
+    .saiba-mais-1{
+        margin: -25px 25px 0;
+    }
+    /* Secao Hoteis */
+    .infos-hoteis{
+        margin: 25% 35% 0;
+        padding: 0;
+    }
+    .infos-titulo{
+        text-align: left;
+        margin: 0 0 50px 0;
+    }
+    #secao-hoteis .btn{
+        margin: 25px 0 0; 
+    }
+    #secao-hoteis .divisor-linha{
+        margin: 15px 0;   
+    }
+    /* Secao Artista Convidado */
+    .convidado-img{
+        background-image: url('../img/justin-timberlake_mobile.png');
+        width: 100vw;
+        height: 60vh;
+    }
+    #secao-convidado{
+        height: 140vh;
+    }
+    .infos-convidado{
+        margin: 10% 10% 0;
+    }
+    #secao-convidado .btn{
+        margin: 25px 5% 0; 
+    }
+    /* Secao Artista Convidado */
+    .convidado-img{
+        background-image: url('../img/justin-timberlake_mobile.png');
+        width: 100vw;
+        height: 60vh;
+    }
+    #secao-convidado{
+        height: 100vh;
+    }
+    .infos-convidado{
+        margin: 10% 10% 0;
+    }
+    #secao-convidado .btn{
+        margin: 25px 1.5% 0; 
+    }
+    /* Seção Produtos Oficiais*/
+    #secao-produtos{
+        height: 100vh;
+    }
+    #img-produtos{
+        margin: 100px 50px;
+        position: relative;
+        left: 0;
+    }
+    #secao-produtos .infos-titulo{
+        margin-left: -20%;
+        text-align: center;
+    }
+    #secao-produtos .btn{
+        position: relative;
+        left: 38.5%;
+    }
+    /* Secao Dados */
+    #secao-dados{
+        width: 100%;
+        height: 100vh;
+    }
+    .bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+        margin: 0 0 25px;
+    }
+    .coluna-dado{
+        margin: 5% 27.5% 0;
+    }
+    #secao-dados .btn{
+        margin: 10px -1.5% 0; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
     /* Carousel Apresentacao */
     .titulo-carousel{
         font-size: 35px;
@@ -281,6 +498,14 @@ a:hover, a:active{
     #secao-convidado .btn{
         margin: 25px 5% 0; 
     }
+    /* Secao Dados */
+    #secao-dados{
+        width: 100%;
+        height: 100vh;
+    }
+    .bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+        margin: 100px 0 100px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -306,11 +531,23 @@ a:hover, a:active{
     }
     #secao-convidado .infos-convidado{
         position: relative;
-        top: 100px;
+        top: 200px;
         width: 33.3%;
     }
     #secao-convidado .btn{
         margin: 25px -20% 0; 
+    }
+    /* Seção Produtos Oficiais*/
+    #secao-produtos{
+        width: 100%;
+        height: 125vh;
+    }
+    .produto-2{
+        width: 288px;
+    }
+    /* Secao Dados */
+    .bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+        margin: 25px 0 25px;
     }
 }
 
@@ -353,5 +590,21 @@ a:hover, a:active{
     }
     #secao-convidado .btn{
         margin: 25px -22.5% 0; 
+    }
+    /* Seção Produtos Oficiais*/
+    #secao-produtos{
+        width: 100%;
+        height: 100vh;
+    }
+    .produto-2{
+        width: 288px;
+    }
+    /* Secao Dados */
+    #secao-dados{
+        width: 100%;
+        height: 100vh;
+    }
+    .bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+        margin: 25px 0 25px;
     }
 }
